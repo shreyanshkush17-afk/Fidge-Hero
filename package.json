@@ -1,0 +1,14 @@
+{
+  "name": "fridge-hero",
+  "version": "1.0.0",
+  "description": "AI recipe app powered by Gemini",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}

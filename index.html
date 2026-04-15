@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fridge Hero</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Fridge Hero</h1>
+      <p class="subtitle">Enter 3 ingredients and tap Cook Magic to get a recipe.</p>
+
+      <form id="recipe-form" class="recipe-form" autocomplete="off">
+        <label for="ingredient-1">Ingredient 1</label>
+        <input id="ingredient-1" name="ingredient1" type="text" placeholder="e.g., Tomato" required />
+
+        <label for="ingredient-2">Ingredient 2</label>
+        <input id="ingredient-2" name="ingredient2" type="text" placeholder="e.g., Onion" required />
+
+        <label for="ingredient-3">Ingredient 3</label>
+        <input id="ingredient-3" name="ingredient3" type="text" placeholder="e.g., Pasta" required />
+
+        <button type="submit" id="cook-btn" aria-label="Generate recipe">Cook Magic</button>
+      </form>
+
+      <section id="recipe-result" class="recipe-result" aria-live="polite" aria-atomic="true">
+        <p class="hint">Your recipe will appear here.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
